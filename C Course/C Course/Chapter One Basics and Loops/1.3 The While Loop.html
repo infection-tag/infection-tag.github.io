@@ -1,0 +1,107 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../style.css">
+    <base target="_parent">
+  </head>
+  
+  <body class="ck-content">
+     <h1>1.3 The While Loop</h1>
+
+    <p>The while loop checks if something is true and does what it's supposed
+      to. After it has done that, it checks again, and does the same thing.</p>
+    <p>Here is the generic while loop:</p><pre><code class="language-text-x-csrc">while(some condition is true) {
+	do something;
+}</code></pre>
+    <p>Let's put this to the test with a program. Can you write a program that
+      will print out the squares of all numbers from one to twenty? Probably
+      not without manually printing all of them.</p><pre><code class="language-text-x-csrc">#include &lt;stdio.h&gt;
+
+/* squares.c: print all of the squares from one to twenty */
+
+main() {
+	int i;
+	i = 1;
+	while(i &lt;= 20) {
+		printf("%d\n", i^2);
+		i++;
+	}
+}</code></pre>
+    <p>In this piece of code, there were several new things that we haven't introduced
+      yet.</p><pre><code class="language-text-x-csrc">/* squares.c: print all of the squares from one to twenty */</code></pre>
+    <p>This is a <i>comment</i>. A comment exists so that you know what you are
+      reading. Comments are contained between /* and */, and are ignored when
+      the code is run.</p><pre><code class="language-text-x-csrc">int i;
+i = 1;</code></pre>
+    <p>int is short for <i>integer</i>. In this case, we are creating an integer,
+      called i. In the second line, we set i to be equal to 1.</p><pre><code class="language-text-x-csrc">while(i &lt;= 20) {</code></pre>
+    <p>the i ≤ 20 is the check; if it fails, it will “break” from the loop.</p>
+    <blockquote>
+      <p>Note: the “less-than-or-equal-to symbol” may render as one symbol on your
+        screen, depending on what system you are using. However, the correct way
+        to render it would be &lt;=, which looks like an arrow pointing to the
+        left.</p>
+    </blockquote><pre><code class="language-text-x-csrc">printf("%d\n", i^2);
+i++;</code></pre>
+    <p>We already know what “\n” means. What does %d mean? Well, it's a placeholder
+      for an integer. Whenever we have a value that is bound to change, like
+      with i in this code, we use a placeholder. Here are some other placeholders
+      that can be used with printf:</p>
+    <figure class="table">
+      <table>
+        <tbody>
+          <tr>
+            <td>Placeholder</td>
+            <td>Type</td>
+          </tr>
+          <tr>
+            <td>%d</td>
+            <td>int</td>
+          </tr>
+          <tr>
+            <td>%c</td>
+            <td>char</td>
+          </tr>
+          <tr>
+            <td>%s</td>
+            <td>string</td>
+          </tr>
+          <tr>
+            <td>%f</td>
+            <td>float</td>
+          </tr>
+          <tr>
+            <td>%l</td>
+            <td>long</td>
+          </tr>
+        </tbody>
+      </table>
+    </figure>
+    <blockquote>
+      <p>Note: don't fret if you don't know what these are; we'll cover them later
+        on.</p>
+    </blockquote>
+    <p>This time, unlike with our hello world code, there are two things inside
+      the brackets. Well, what does the part after the comma mean? Well, like
+      I said, %d is a placeholder for an integer. So, naturally, it follows,
+      that the next thing will be the integer that should replace the %d. We
+      already know what i is, but what does the ^2 mean? i^2 can be read as <i>i to the power of two</i>,
+      or <i>i squared</i>.</p>
+    <p>After that, we incremented i, to become one more that its earlier value.
+      i++ tells the operator to read the value of i and then increment; ++i will
+      increment the value of i and then read it. In this instance, the two are
+      interchangable, but when we move on to more advanced concepts, the order
+      will become essential to the success of the code.</p>
+    <blockquote>
+      <p>Note: What do you think would have happened if you didn't include i++?
+        Try it.</p>
+    </blockquote>
+    <p><a href="1.2%20Hello%20World%20Breakdown.html">Previous</a>
+    </p>
+    <p><a href="1.4%20The%20For%20Loop.html">Next</a>
+    </p>
+  </body>
+
+</html>
