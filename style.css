@@ -1,3 +1,21 @@
+
+/* NiKo's custom Changes */
+p {
+    font-family: helvetica;
+}
+
+h1 {
+    font-family: helvetica;
+}
+
+h2 {
+    font-family: helvetica;
+}
+
+h3 {
+    font-family: helvetica;
+}
+
 /* !!!!!! TRILIUM CUSTOM CHANGES !!!!!! */
 
 .printed-content .ck-widget__selection-handle, .printed-content .ck-widget__type-around { /* gets rid of triangles: https://github.com/zadam/trilium/issues/1129 */
@@ -409,4 +427,3 @@
         display: none;
     }
 }
-
