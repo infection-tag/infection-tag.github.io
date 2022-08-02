@@ -8,4 +8,6 @@ This is my blog.
 
 A C course. I made this for one of my friends. Made using Trillium Notes.
 
+The course has been moved to [here](https://infection-tag.github.io/learn-c).
+
 !!This course is still under developement!!
